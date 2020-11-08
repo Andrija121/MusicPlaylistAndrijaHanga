@@ -152,6 +152,7 @@ namespace MusicPlaylistAndrijaHanga
         private void btnDeleteSong_Click(object sender, EventArgs e)
         {
             _songs.Remove((Song) listBoxAllSongs.SelectedItem);
+            FilterSongs();
         }
 
         private void sortSongsBtn_Click(object sender, EventArgs e)
