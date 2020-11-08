@@ -1,6 +1,6 @@
 ﻿namespace MusicPlaylistAndrijaHanga
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,40 +39,44 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxArtistFilter = new System.Windows.Forms.ComboBox();
+            this.totalDurationLbl = new System.Windows.Forms.Label();
+            this.sortSongsBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBoxGenrePlaylist
             // 
             this.comboBoxGenrePlaylist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGenrePlaylist.FormattingEnabled = true;
-            this.comboBoxGenrePlaylist.Location = new System.Drawing.Point(34, 72);
+            this.comboBoxGenrePlaylist.Location = new System.Drawing.Point(51, 56);
+            this.comboBoxGenrePlaylist.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxGenrePlaylist.Name = "comboBoxGenrePlaylist";
-            this.comboBoxGenrePlaylist.Size = new System.Drawing.Size(251, 28);
+            this.comboBoxGenrePlaylist.Size = new System.Drawing.Size(169, 21);
             this.comboBoxGenrePlaylist.TabIndex = 1;
             // 
             // listBoxAllSongs
             // 
             this.listBoxAllSongs.FormattingEnabled = true;
-            this.listBoxAllSongs.ItemHeight = 20;
-            this.listBoxAllSongs.Location = new System.Drawing.Point(34, 156);
+            this.listBoxAllSongs.Location = new System.Drawing.Point(23, 101);
+            this.listBoxAllSongs.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxAllSongs.Name = "listBoxAllSongs";
-            this.listBoxAllSongs.Size = new System.Drawing.Size(251, 264);
+            this.listBoxAllSongs.Size = new System.Drawing.Size(235, 173);
             this.listBoxAllSongs.TabIndex = 2;
             // 
             // listBoxSelectedSongs
             // 
             this.listBoxSelectedSongs.FormattingEnabled = true;
-            this.listBoxSelectedSongs.ItemHeight = 20;
-            this.listBoxSelectedSongs.Location = new System.Drawing.Point(487, 156);
+            this.listBoxSelectedSongs.Location = new System.Drawing.Point(399, 101);
+            this.listBoxSelectedSongs.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxSelectedSongs.Name = "listBoxSelectedSongs";
-            this.listBoxSelectedSongs.Size = new System.Drawing.Size(251, 264);
+            this.listBoxSelectedSongs.Size = new System.Drawing.Size(235, 173);
             this.listBoxSelectedSongs.TabIndex = 3;
             // 
             // btnMoveSong
             // 
-            this.btnMoveSong.Location = new System.Drawing.Point(329, 184);
+            this.btnMoveSong.Location = new System.Drawing.Point(285, 119);
+            this.btnMoveSong.Margin = new System.Windows.Forms.Padding(2);
             this.btnMoveSong.Name = "btnMoveSong";
-            this.btnMoveSong.Size = new System.Drawing.Size(136, 75);
+            this.btnMoveSong.Size = new System.Drawing.Size(91, 49);
             this.btnMoveSong.TabIndex = 4;
             this.btnMoveSong.Text = "Add song to your playlist";
             this.btnMoveSong.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@
             // 
             // btnRemoveSong
             // 
-            this.btnRemoveSong.Location = new System.Drawing.Point(329, 295);
+            this.btnRemoveSong.Location = new System.Drawing.Point(285, 194);
+            this.btnRemoveSong.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveSong.Name = "btnRemoveSong";
-            this.btnRemoveSong.Size = new System.Drawing.Size(136, 75);
+            this.btnRemoveSong.Size = new System.Drawing.Size(91, 49);
             this.btnRemoveSong.TabIndex = 5;
             this.btnRemoveSong.Text = "Remove song from your playlist";
             this.btnRemoveSong.UseVisualStyleBackColor = true;
@@ -90,9 +95,10 @@
             // 
             // btnAddSong
             // 
-            this.btnAddSong.Location = new System.Drawing.Point(34, 426);
+            this.btnAddSong.Location = new System.Drawing.Point(23, 276);
+            this.btnAddSong.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddSong.Name = "btnAddSong";
-            this.btnAddSong.Size = new System.Drawing.Size(106, 69);
+            this.btnAddSong.Size = new System.Drawing.Size(71, 45);
             this.btnAddSong.TabIndex = 7;
             this.btnAddSong.Text = "Add new song";
             this.btnAddSong.UseVisualStyleBackColor = true;
@@ -100,9 +106,10 @@
             // 
             // btnDeleteSong
             // 
-            this.btnDeleteSong.Location = new System.Drawing.Point(179, 426);
+            this.btnDeleteSong.Location = new System.Drawing.Point(106, 276);
+            this.btnDeleteSong.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteSong.Name = "btnDeleteSong";
-            this.btnDeleteSong.Size = new System.Drawing.Size(106, 69);
+            this.btnDeleteSong.Size = new System.Drawing.Size(71, 45);
             this.btnDeleteSong.TabIndex = 6;
             this.btnDeleteSong.Text = "Remove song";
             this.btnDeleteSong.UseVisualStyleBackColor = true;
@@ -111,44 +118,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(103, 122);
+            this.label1.Location = new System.Drawing.Point(109, 79);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "All Songs";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(574, 133);
+            this.label2.Location = new System.Drawing.Point(503, 79);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.Size = new System.Drawing.Size(39, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Playlist";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(530, 450);
+            this.label3.Location = new System.Drawing.Point(503, 276);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Duration";
+            this.label3.Text = "Total duration";
             // 
             // comboBoxArtistFilter
             // 
             this.comboBoxArtistFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxArtistFilter.FormattingEnabled = true;
-            this.comboBoxArtistFilter.Location = new System.Drawing.Point(34, 23);
+            this.comboBoxArtistFilter.Location = new System.Drawing.Point(51, 24);
+            this.comboBoxArtistFilter.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxArtistFilter.Name = "comboBoxArtistFilter";
-            this.comboBoxArtistFilter.Size = new System.Drawing.Size(251, 28);
+            this.comboBoxArtistFilter.Size = new System.Drawing.Size(169, 21);
             this.comboBoxArtistFilter.TabIndex = 11;
             // 
-            // Form1
+            // totalDurationLbl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.totalDurationLbl.AutoSize = true;
+            this.totalDurationLbl.Location = new System.Drawing.Point(590, 276);
+            this.totalDurationLbl.Name = "totalDurationLbl";
+            this.totalDurationLbl.Size = new System.Drawing.Size(0, 13);
+            this.totalDurationLbl.TabIndex = 12;
+            // 
+            // sortSongsBtn
+            // 
+            this.sortSongsBtn.Location = new System.Drawing.Point(187, 276);
+            this.sortSongsBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.sortSongsBtn.Name = "sortSongsBtn";
+            this.sortSongsBtn.Size = new System.Drawing.Size(71, 45);
+            this.sortSongsBtn.TabIndex = 13;
+            this.sortSongsBtn.Text = "Sort songs";
+            this.sortSongsBtn.UseVisualStyleBackColor = true;
+            this.sortSongsBtn.Click += new System.EventHandler(this.sortSongsBtn_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 567);
+            this.ClientSize = new System.Drawing.Size(703, 395);
+            this.Controls.Add(this.sortSongsBtn);
+            this.Controls.Add(this.totalDurationLbl);
             this.Controls.Add(this.comboBoxArtistFilter);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -160,10 +192,10 @@
             this.Controls.Add(this.listBoxSelectedSongs);
             this.Controls.Add(this.listBoxAllSongs);
             this.Controls.Add(this.comboBoxGenrePlaylist);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Music Playlist";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,6 +214,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxArtistFilter;
+        private System.Windows.Forms.Label totalDurationLbl;
+        private System.Windows.Forms.Button sortSongsBtn;
     }
 }
 
