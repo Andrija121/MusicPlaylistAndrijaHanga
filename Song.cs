@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MusicPlaylistAndrijaHanga
+﻿namespace MusicPlaylistAndrijaHanga
 {
     public class Song
     {
@@ -12,10 +6,10 @@ namespace MusicPlaylistAndrijaHanga
         public string Artist { get; set; }
         public Genre Genre { get; set; }
 
-        public string TitleArtist
-        {
-            get { return Title + " - " + Artist; }
-        }
+        public int Minutes { get; set; }
+        public int Seconds { get; set; }
+
+        public string DisplayProp => Title + " - " + Artist + " " + Minutes + ":" + Seconds;
     }
 
     public enum Genre
